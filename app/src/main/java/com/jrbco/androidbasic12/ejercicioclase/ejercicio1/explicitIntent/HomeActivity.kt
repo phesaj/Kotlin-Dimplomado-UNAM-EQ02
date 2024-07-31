@@ -1,4 +1,4 @@
-package com.jrbco.androidbasic12.explicitIntent
+package com.jrbco.androidbasic12.ejercicioclase.ejercicio1.explicitIntent
 
 import android.content.Intent
 import android.os.Bundle
@@ -35,7 +35,7 @@ class HomeActivity : AppCompatActivity() {
         val btnSenActivity = findViewById<Button>(R.id.btnSendActivity)
 
         btnSenActivity.setOnClickListener {
-            val intent = Intent(this,SecondActivity::class.java).apply {
+            val intent = Intent(this, SecondActivity::class.java).apply {
 
 //                val bundle = Bundle().apply {
 //                    putExtra("EXTRA_AGE",40)
