@@ -8,6 +8,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.jrbco.androidbasic12.R
 
+//Juan Jose Gonzalez Melgarejo
+//Rigel
+//Joel
+
 class ImplisitIntentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
