@@ -1,8 +1,8 @@
-package com.jrbco.androidbasic12
+package com.jrbco.androidbasic12.ejercicioclase.ejercicio1
 
-import android.app.TaskStackBuilder
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.jrbco.androidbasic12.R
 
 class CreationExample2Activity: AppCompatActivity() {
 

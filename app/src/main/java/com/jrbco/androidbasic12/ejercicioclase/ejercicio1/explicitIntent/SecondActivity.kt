@@ -1,4 +1,4 @@
-package com.jrbco.androidbasic12.explicitIntent
+package com.jrbco.androidbasic12.ejercicioclase.ejercicio1.explicitIntent
 
 import android.content.Intent
 import android.os.Bundle

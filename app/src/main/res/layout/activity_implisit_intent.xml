@@ -5,25 +5,26 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ImplisitIntentActivity">
-<Button
-    android:id="@+id/btnSend"
-    android:text="Enviar"
-    app:layout_constraintBottom_toBottomOf="parent"
-    android:layout_marginBottom="30dp"
-    android:layout_marginRight="30dp"
-    android:layout_marginLeft="30dp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>
+    tools:context=".ejercicioclase.ejercicio1.ImplisitIntentActivity">
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <Button
         android:id="@+id/btnSendUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:text="Enviar url"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
