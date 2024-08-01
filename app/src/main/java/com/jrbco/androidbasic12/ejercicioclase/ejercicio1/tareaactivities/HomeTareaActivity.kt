@@ -49,34 +49,34 @@ class HomeTareaActivity : AppCompatActivity() {
         val btnCircleLifeActivity = findViewById<Button>(R.id.btnLifeCycle)
         val btnYouTubeActivity = findViewById<Button>(R.id.btnImplicit)
         val btnSenActivity = findViewById<Button>(R.id.btnEnviar)
-        val nameReg = findViewById<EditText>(R.id.editTextNombre)
-        val secondName = findViewById<EditText>(R.id.editTextSecondName)
-        val email = findViewById<EditText>(R.id.editTextEmail)
-        val age = findViewById<EditText>(R.id.editTextAge)
-        val phone = findViewById<EditText>(R.id.editTextPhone)
 
 
 
         btnSenActivity.setOnClickListener {
+            val nameReg = findViewById<EditText>(R.id.editTextNombre)
+            val secondName = findViewById<EditText>(R.id.editTextSecondName)
+            val email = findViewById<EditText>(R.id.editTextEmail)
+            val age = findViewById<EditText>(R.id.editTextAge)
+            val phone = findViewById<EditText>(R.id.editTextPhone)
+            val a = nameReg.text
+            val b = secondName.text
+            val c = email.text
+            val d = age.text
+            val e = phone.text
             val intent = Intent(this, SecondTareaActivity::class.java).apply {
-
-                putExtra("EXTRA_NAME_KEY",nameReg.text)
-                putExtra("EXTRA_SECOND_NAME_KEY",secondName.text)
-                putExtra("EXTRA_EMAIL_KEY",email.text)
-                putExtra("EXTRA_AGE_KEY", age.text)
-                putExtra("EXTRA_PHONE_KEY", phone.text)
+                putExtra("name"," $a")
+                putExtra("sname"," $b")
+                putExtra("email"," $c")
+                putExtra("age", " $d")
+                putExtra("phone", " $e")
             }
-//            val sd = nameReg.text
-//            Toast.makeText(this,"Mi nombre es: $sd ",Toast.LENGTH_SHORT).show()
-            // startActivity(intent)
             register.launch(intent)
 
         }
 
         btnCircleLifeActivity.setOnClickListener {
             val intent = Intent(this, LifeCycleTareaActivity::class.java).apply {
-                putExtra("EXTRA_NAME_KEY_2", "Joel")
-                putExtra("EXTRA_AGE_2", 40)
+
             }
             startActivity(intent)
         }
