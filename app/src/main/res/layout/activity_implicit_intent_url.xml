@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ejercicioclase.ejercicio1.tareaactivities1.ImplicitIntentUrlActivity">
+    tools:context=".ejercicioclase.ejercicio1.tareaactivities.puntosactivties1.ImplicitIntentUrlActivity">
 
     <Button
         android:id="@+id/btnSendYouTube"

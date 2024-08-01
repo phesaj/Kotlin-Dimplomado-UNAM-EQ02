@@ -1,4 +1,4 @@
-package com.jrbco.androidbasic12.ejercicioclase.ejercicio1.tareaactivities1
+package com.jrbco.androidbasic12.ejercicioclase.ejercicio1.tareaactivities.puntosactivties1
 
 import android.content.Intent
 import android.net.Uri
