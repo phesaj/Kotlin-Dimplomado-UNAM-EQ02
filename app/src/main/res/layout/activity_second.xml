@@ -7,8 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".ejercicioclase.ejercicio1.explicitIntent.SecondActivity">
     <TextView
-        android:id="@+id/lableName"
-        android:text="Esta es mi segunda Activity"
+        android:id="@+id/lName"
+        android:text="Esta es mi segunda Activity "
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="50dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

@@ -16,7 +16,7 @@ class HomeActivity : AppCompatActivity() {
 
     private val register = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){ result ->
         if(result.resultCode == RESULT_OK){
-            val isCorrect = result.data?.getBooleanExtra("EXTRA_IS_CORRECT_KEY",false)
+            val isCorrect = result.data?.getBooleanExtra("EXTRA_IS_CORRECT_KEY_01",false)
             if(isCorrect==true){
                 onBackPressedDispatcher.onBackPressed()
             }else{
@@ -41,8 +41,8 @@ class HomeActivity : AppCompatActivity() {
 //                    putExtra("EXTRA_AGE",40)
 //                    putExtra("EXTRA_SURNAME","Rodriguez")
 //                }
-                putExtra("EXTRA_NAME_KEY","Joel")
-                putExtra("EXTRA_AGE",40)
+                putExtra("EXTRA_NAME_KEY_01","Joel Rodriguez")
+                putExtra("EXTRA_AGE_01",39)
             }
 
            // startActivity(intent)

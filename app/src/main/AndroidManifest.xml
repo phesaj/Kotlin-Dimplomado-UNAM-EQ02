@@ -18,11 +18,7 @@
         <activity
             android:name=".ejercicioclase.ejercicio1.tareaactivities.HomeTareaActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ejercicioclase.ejercicio1.tareaactivities.puntosactivties1.ImplicitIntentUrlActivity"

@@ -3,6 +3,7 @@ package com.jrbco.androidbasic12.ejercicioclase.ejercicio1.tareaactivities
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
@@ -48,13 +49,25 @@ class HomeTareaActivity : AppCompatActivity() {
         val btnCircleLifeActivity = findViewById<Button>(R.id.btnLifeCycle)
         val btnYouTubeActivity = findViewById<Button>(R.id.btnImplicit)
         val btnSenActivity = findViewById<Button>(R.id.btnEnviar)
+        val nameReg = findViewById<EditText>(R.id.editTextNombre)
+        val secondName = findViewById<EditText>(R.id.editTextSecondName)
+        val email = findViewById<EditText>(R.id.editTextEmail)
+        val age = findViewById<EditText>(R.id.editTextAge)
+        val phone = findViewById<EditText>(R.id.editTextPhone)
+
+
 
         btnSenActivity.setOnClickListener {
             val intent = Intent(this, SecondTareaActivity::class.java).apply {
-                putExtra("EXTRA_NAME_KEY", "Joel")
-                putExtra("EXTRA_AGE", 40)
-            }
 
+                putExtra("EXTRA_NAME_KEY",nameReg.text)
+                putExtra("EXTRA_SECOND_NAME_KEY",secondName.text)
+                putExtra("EXTRA_EMAIL_KEY",email.text)
+                putExtra("EXTRA_AGE_KEY", age.text)
+                putExtra("EXTRA_PHONE_KEY", phone.text)
+            }
+//            val sd = nameReg.text
+//            Toast.makeText(this,"Mi nombre es: $sd ",Toast.LENGTH_SHORT).show()
             // startActivity(intent)
             register.launch(intent)
 
@@ -62,16 +75,15 @@ class HomeTareaActivity : AppCompatActivity() {
 
         btnCircleLifeActivity.setOnClickListener {
             val intent = Intent(this, LifeCycleTareaActivity::class.java).apply {
-                putExtra("EXTRA_NAME_KEY", "Joel")
-                putExtra("EXTRA_AGE", 40)
+                putExtra("EXTRA_NAME_KEY_2", "Joel")
+                putExtra("EXTRA_AGE_2", 40)
             }
             startActivity(intent)
         }
 
         btnYouTubeActivity.setOnClickListener {
             val intent = Intent(this, ImplicitIntentUrlActivity::class.java).apply {
-                putExtra("EXTRA_NAME_KEY", "Joel")
-                putExtra("EXTRA_AGE", 40)
+
             }
             startActivity(intent)
         }
