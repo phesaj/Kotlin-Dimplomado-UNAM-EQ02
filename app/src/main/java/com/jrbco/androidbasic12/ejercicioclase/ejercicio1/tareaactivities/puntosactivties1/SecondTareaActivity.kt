@@ -45,7 +45,7 @@ class SecondTareaActivity : AppCompatActivity() {
 
             btnreturn.setOnClickListener {
                 val resultsIntent = Intent().apply {
-                    putExtra("EXTRA_NAME_KEY", false)
+                    putExtra("resultado", labelname.text.toString())
                 }
 
                 setResult(RESULT_OK, resultsIntent)

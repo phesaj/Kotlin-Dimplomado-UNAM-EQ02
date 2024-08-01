@@ -28,12 +28,8 @@ class HomeTareaActivity : AppCompatActivity() {
     private val register =
         registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == RESULT_OK) {
-                val isCorrect = result.data?.getBooleanExtra("EXTRA_IS_CORRECT_KEY", false)
-                if (isCorrect == true) {
-                    onBackPressedDispatcher.onBackPressed()
-                } else {
-                    Toast.makeText(this, "resultExtra= $isCorrect", Toast.LENGTH_SHORT).show()
-                }
+                val isCorrect = result.data?.getStringExtra("resultado" )
+                Toast.makeText(this, "resultExtra= $isCorrect", Toast.LENGTH_SHORT).show()
             } else {
                 Toast.makeText(this, "CANCELED", Toast.LENGTH_SHORT).show()
             }
