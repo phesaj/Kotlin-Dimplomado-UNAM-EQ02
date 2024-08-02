@@ -14,7 +14,7 @@ import com.jrbco.androidbasic12.R
 import kotlin.math.log
 
 /*
-Equipo 2
+Equipo no. 2
 Juan Jose Gonzalez Melgarejo
 Ricardo Rigel Sánchez Riquelme
 Joel Rodríguez Becerril
