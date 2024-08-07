@@ -8,35 +8,7 @@
     android:background="#fcff33"
     tools:context=".ejercicioclase.ejercicio2.actividad.FrameLayoutTareaActivity">
 
-    <!--
-    <TextView
-        android:text="Texto ejemplo dentro de FrameLayout"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
-    <TextView
-        android:text="Texto ejemplo 2 dentro de FrameLayout"
-        android:layout_gravity="top|end"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:text="Texto ejemplo 3 dentro de FrameLayout"
-        android:layout_gravity="bottom|start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
--->
-
-    <!-- Imagen de fondo -->
-    <!--<ImageView
-        android:id="@+id/background_image"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@mipmap/ic_launcher"
-        android:scaleType="centerCrop" />-->
-
-    <!-- Título -->
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
@@ -48,104 +20,6 @@
         android:background="@android:color/holo_red_dark"
         android:layout_gravity="top"
         android:padding="16dp" />
-<!--
-
-    &lt;!&ndash; FrameLayout para opciones de comida &ndash;&gt;
-    <FrameLayout
-        android:id="@+id/food_options"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:layout_marginTop="70dp">
-
-        <TextView
-            android:id="@+id/food_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Desayunos"
-            android:textColor="@android:color/holo_red_dark"
-            android:textSize="20sp"
-            android:layout_gravity="top|center_horizontal"/>
-
-        <ImageButton
-            android:id="@+id/image_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
-            android:scaleType="fitXY"
-            android:adjustViewBounds="true"
-            android:layout_gravity="center"
-            android:background="@null" />
-
-
-
-        <Button
-            android:id="@+id/food_option1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pizza"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="40dp" />
-
-        <Button
-            android:id="@+id/food_option2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hamburguesa"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="80dp" />
-        <Button
-            android:id="@+id/food_option1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pizza"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="120dp" />
-
-        <Button
-            android:id="@+id/food_option2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hamburguesa"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="160dp" />
-
-    </FrameLayout>
-
-    &lt;!&ndash; FrameLayout para opciones de bebida &ndash;&gt;
-    <FrameLayout
-        android:id="@+id/drink_options"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom">
-
-        <TextView
-            android:id="@+id/drink_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Opciones de Bebida"
-            android:textSize="20sp"
-            android:layout_gravity="center_horizontal"
-            android:padding="16dp" />
-
-        <Button
-            android:id="@+id/drink_option1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Agua"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="40dp" />
-
-        <Button
-            android:id="@+id/drink_option2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Refresco"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="80dp" />
-
-    </FrameLayout>
--->
 
     <FrameLayout
         android:id="@+id/breakfastFrame"
@@ -156,26 +30,27 @@
         android:padding="16dp">
 
         <ImageView
-            android:id="@+id/breakfastImageView"
+            android:id="@+id/DesayunoImage"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@mipmap/ic_launcher"
             android:scaleType="centerCrop" />
 
         <Spinner
-            android:id="@+id/breakfastSpinner"
-            android:layout_width="wrap_content"
+            android:id="@+id/spinDesayuno"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|start"
+            android:background="#fcff33"
             android:layout_margin="16dp" />
 
         <Button
-            android:id="@+id/breakfastOrderButton"
+            android:id="@+id/btnDesayunoOrder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_margin="16dp"
-            android:text="Ordenar" />
+            android:text="Agregar" />
     </FrameLayout>
 
     <FrameLayout
@@ -187,26 +62,28 @@
         android:padding="16dp">
 
         <ImageView
-            android:id="@+id/lunchImageView"
+            android:id="@+id/ComidaImage"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@mipmap/ic_launcher"
             android:scaleType="centerCrop" />
 
         <Spinner
-            android:id="@+id/lunchSpinner"
-            android:layout_width="wrap_content"
+            android:id="@+id/spinComida"
+            android:background="#fcff33"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|start"
             android:layout_margin="16dp" />
 
         <Button
-            android:id="@+id/lunchOrderButton"
+            android:id="@+id/btnComidaOrder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_margin="16dp"
-            android:text="Ordenar" />
+            android:text="Agregar" />
+
     </FrameLayout>
 
 </FrameLayout>
