@@ -2,6 +2,7 @@ package com.jrbco.androidbasic12.ejercicioclase.ejercicio1.explicitIntent
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -19,6 +20,12 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_second)
+
+
+        //mostrar action bar
+        //supportActionBar?.setDisplayShowTitleEnabled(false)
+        //supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        //supportActionBar?.setDisplayUseLogoEnabled(true)
 
         val lName = findViewById<TextView>(R.id.lName)
         val btnReturn = findViewById<Button>(R.id.btnReturn)
@@ -49,4 +56,17 @@ class SecondActivity : AppCompatActivity() {
         }
 
     }
+
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when(item.itemId){
+            android.R.id.home  ->{
+                onBackPressedDispatcher.onBackPressed()
+            }
+        }
+
+        return super.onOptionsItemSelected(item)
+    }
+
 }

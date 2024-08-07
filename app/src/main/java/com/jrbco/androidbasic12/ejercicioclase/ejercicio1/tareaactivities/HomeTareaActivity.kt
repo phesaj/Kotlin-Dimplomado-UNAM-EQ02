@@ -71,9 +71,7 @@ class HomeTareaActivity : AppCompatActivity() {
         }
 
         btnCircleLifeActivity.setOnClickListener {
-            val intent = Intent(this, LifeCycleTareaActivity::class.java).apply {
-
-            }
+            val intent = Intent(this, LifeCycleTareaActivity::class.java)
             startActivity(intent)
         }
 
