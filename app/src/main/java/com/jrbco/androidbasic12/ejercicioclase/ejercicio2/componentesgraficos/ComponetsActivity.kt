@@ -24,7 +24,7 @@ class ComponetsActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_componets)
 
-        val cbCreditCard = findViewById<CheckBox>(R.id.checkboxGender)
+        val cbCreditCard = findViewById<CheckBox>(R.id.checkboxCreditcard)
         val btnGetinfo = findViewById<Button>(R.id.btnGetInfo)
         val rgsex = findViewById<RadioGroup>(R.id.rgSex)
         val spinner = findViewById<Spinner>(R.id.spinner)
