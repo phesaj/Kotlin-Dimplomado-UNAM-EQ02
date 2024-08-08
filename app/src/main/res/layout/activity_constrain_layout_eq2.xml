@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+
+    tools:context=".ejercicioclase.ejercicio2.componentesgraficos.Tarea2.ConstrainLayoutEq2Activity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linearVertical"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linearVertical2"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="360dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linearHorizontal"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linearHorizontalInferior"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linearHorizontalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="281dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linearHorizontalTextBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="131dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linearHorizontalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="80dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linearHorizontalButtonbo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="30dp" />
+
+    <CalendarView
+        android:id="@+id/CalendarC"
+        app:circularflow_defaultRadius="@dimen/material_emphasis_disabled"
+        android:background="@color/material_dynamic_neutral60"
+        android:layout_width="322dp"
+        android:layout_height="254dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearHorizontalInferior"
+        app:layout_constraintEnd_toStartOf="@id/linearVertical2"
+        app:layout_constraintStart_toStartOf="@+id/linearVertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearHorizontal" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="320dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:text="Ingresa una nueva actividad"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toStartOf="@id/linearVertical2"
+        app:layout_constraintStart_toStartOf="@+id/linearVertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearHorizontalInferior" />
+
+    <EditText
+        android:id="@+id/Edittext"
+        android:focusable="false"
+        android:hint="Fecha de inicio de la actividad"
+        android:textColor="@color/white"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@id/linearVertical2"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintStart_toStartOf="@+id/linearVertical"
+        android:layout_marginTop="10dp"
+        android:background="@color/material_dynamic_neutral60"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/Edittext2"
+        android:hint="Fecha de cierre de la actividad"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/Edittext"
+        app:layout_constraintStart_toStartOf="@+id/linearVertical"
+        app:layout_constraintEnd_toStartOf="@id/linearVertical2"
+        android:layout_marginTop="10dp"
+        android:layout_width="0dp"
+        android:background="@color/material_dynamic_neutral60"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Describe la actividad"
+        android:gravity="center"
+        android:background="@color/material_dynamic_neutral60"
+        app:layout_constraintStart_toStartOf="@+id/linearVertical"
+        app:layout_constraintEnd_toStartOf="@id/linearVertical2"
+        app:layout_constraintTop_toBottomOf="@id/linearHorizontalText"
+        app:layout_constraintBottom_toTopOf="@id/linearHorizontalTextBottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <Button
+        android:background="@color/design_default_color_primary_variant"
+        android:text="Agregar actividad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/linearVertical"
+        app:layout_constraintBottom_toTopOf="@id/linearHorizontalButtonbo"
+        app:layout_constraintEnd_toStartOf="@id/linearVertical2"
+        app:layout_constraintTop_toBottomOf="@id/linearHorizontalButton"
+         />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
