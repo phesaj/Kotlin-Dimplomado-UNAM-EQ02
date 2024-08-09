@@ -1,6 +1,7 @@
 package com.jrbco.androidbasic12.tareas.tareajuan.tarea1
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -113,6 +114,7 @@ class JuanRegistroAppActivity : AppCompatActivity() {
             val correo = etCorreo.text.toString()
             val contraseña = etContraseña.text.toString()
             val genero = findViewById<RadioButton>(rgGenero.checkedRadioButtonId).text.toString()
+            val telefono = etTelefono.text.toString()
             //val genero = when(rgGenero.checkedRadioButtonId){R.id.rbFemale ->{"Mujer"}R.id.rbMale ->{"Hombre"}else ->{"rainbow"} }
             val nacimiento = etNacimiento.text.toString()
 
@@ -129,8 +131,22 @@ class JuanRegistroAppActivity : AppCompatActivity() {
             editor.apply()
             */
 
+            val intent = Intent(this, JuanRegistroAppRespuestaActivity::class.java).apply {
 
-            Toast.makeText(this, "Datos guardados correctamente", Toast.LENGTH_SHORT).show()
+                putExtra("EXTRA_NAME_KEY_01","prueba")
+                putExtra("EXTRA_AGE_01",39)
+                putExtra("name", nombre)
+                putExtra("lastName", apellidos)
+                putExtra("email", correo)
+                putExtra("password", contraseña)
+                putExtra("gender", genero)
+                putExtra("phone", telefono)
+                putExtra("birthDate", nacimiento)
+            }
+
+            startActivity(intent)
+
+            Toast.makeText(this, "Datos guardados correctamente $nombre,$apellidos,$correo,$contraseña,$genero,$nacimiento,$telefono", Toast.LENGTH_SHORT).show()
         }
 
 
