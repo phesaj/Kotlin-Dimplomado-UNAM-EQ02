@@ -20,6 +20,8 @@ import com.jrbco.androidbasic12.R
 import java.util.Calendar
 import java.util.Locale
 
+//Juan Jose Gonzalez Melgarejo
+
 class JuanRegistroAppActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
