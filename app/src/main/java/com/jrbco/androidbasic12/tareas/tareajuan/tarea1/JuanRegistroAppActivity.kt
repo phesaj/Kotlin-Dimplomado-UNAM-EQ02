@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Patterns
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
@@ -18,6 +19,8 @@ import androidx.core.view.WindowInsetsCompat
 import com.jrbco.androidbasic12.R
 import java.util.Calendar
 import java.util.Locale
+
+//Juan Jose Gonzalez Melgarejo
 
 class JuanRegistroAppActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -117,6 +120,11 @@ class JuanRegistroAppActivity : AppCompatActivity() {
             val telefono = etTelefono.text.toString()
             //val genero = when(rgGenero.checkedRadioButtonId){R.id.rbFemale ->{"Mujer"}R.id.rbMale ->{"Hombre"}else ->{"rainbow"} }
             val nacimiento = etNacimiento.text.toString()
+
+            if (!Patterns.EMAIL_ADDRESS.matcher(correo).matches()) {
+                etCorreo.error = "Correo electrónico no válido"
+                return@setOnClickListener
+            }
 
             // Guardar datos en SharedPreferences
             /*
