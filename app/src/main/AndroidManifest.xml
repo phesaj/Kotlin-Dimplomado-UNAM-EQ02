@@ -16,6 +16,15 @@
             android:name=".ejercicioclase.ejercicio2.actividad.RelativeLayoutTareaActivity"
             android:exported="false" />
         <activity
+            android:name=".tareas.tareajuan.tarea1.JuanRegistroAppActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tareas.tareajuan.tarea1.JuanRegistroAppRespuestaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tareas.tareajuan.JuanTareaSelectActivity"
+            android:exported="false" />
+        <activity
             android:name=".ejercicioclase.ejercicio2.actividad.FrameLayoutTareaActivity"
             android:exported="false" />
         <activity
