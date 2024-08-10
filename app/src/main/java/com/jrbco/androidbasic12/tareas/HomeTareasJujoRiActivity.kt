@@ -5,10 +5,9 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.jrbco.androidbasic12.R
 import com.jrbco.androidbasic12.tareas.tareajuan.JuanTareaSelectActivity
+import com.jrbco.androidbasic12.tareas.tarearicardo.RigelTareaSelectActivity
 
 class HomeTareasJujoRiActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,11 +20,11 @@ class HomeTareasJujoRiActivity : AppCompatActivity() {
         val btnTareasJoel = findViewById<Button>(R.id.btnGoTareasJoel)
 
 
-/*
+
         btnTareasRicar.setOnClickListener {
-            val intent = Intent(this, ::class.java)
+            val intent = Intent(this, RigelTareaSelectActivity::class.java)
             startActivity(intent)
-        }*/
+        }
 
         btnTareasJuan.setOnClickListener {
             val intent = Intent(this, JuanTareaSelectActivity::class.java)
