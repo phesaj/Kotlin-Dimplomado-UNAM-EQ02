@@ -18,6 +18,15 @@
             android:name=".ejercicioclase.ejercicio2.componentesgraficos.list.AnimalDetailActivity"
             android:exported="false" />
         <activity
+            android:name=".tareas.tarearicardo.registroapp.RigelRegistroInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tareas.tarearicardo.registroapp.RigelRegistroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tareas.tarearicardo.RigelTareaSelectActivity"
+            android:exported="false" />
+        <activity
             android:name=".ejercicioclase.ejercicio2.actividad.RelativeLayoutTareaActivity"
             android:exported="false" />
         <activity
