@@ -4,4 +4,5 @@
     <string name="label_continue">Continuar</string>
     <string name="label_cancel">Cancelar</string>
     <string name="label_close">Cerrar</string>
+    <string name="hello_blank_fragment">Hola soy un dragmento blanco</string>
 </resources>
